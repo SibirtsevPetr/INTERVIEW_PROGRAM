@@ -4,8 +4,7 @@ import java.util.stream.IntStream;
 public class Main{
     public static void main(String[] args) {
         Random rNumber = new Random();
-        Integer[] arr = IntStream.range(0, 30).map(i -> rNumber.nextInt(100)).boxed().distinct()
-                .toArray(Integer[]::new);
+        Integer[] arr = IntStream.range(0, 30).map(i -> rNumber.nextInt(100)).boxed().distinct().toArray(Integer[]::new);
         System.out.println(Arrays.toString(arr));
     }
 }
