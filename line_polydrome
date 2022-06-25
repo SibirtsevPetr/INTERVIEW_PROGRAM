@@ -1,0 +1,6 @@
+public static int IsStringPolyndrom(String poly) {
+    String part1 = poly.substring(0, poly.length() / 2);
+    String part2 = poly.substring(poly.length() / 2 + poly.length() % 2);
+    String part2Reverse = new StringBuilder(part2).reverse().toString();
+    return part1.compareTo(part2Reverse));
+}
